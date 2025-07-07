@@ -1,0 +1,220 @@
+<html>
+    <head>
+        <h1>Numbers : A Kids Game</h1>
+        <style>
+            .btnone{
+                width: 200px;
+                height: 200px;
+                background-image: url('one.jpg');
+                background-size: cover;
+            }
+            
+            .btntwo{
+                width: 200px;
+                height: 200px;
+                background-image: url('two.jpg');
+                background-size: cover;
+            }
+
+            .btnthree{
+                width: 200px;
+                height: 200px;
+                background-image: url('three.jpg');
+                background-size: cover;
+            }
+          
+            .btnfour{
+                width: 200px;
+                height: 200px;
+                background-image: url('four.jpg');
+                background-size: cover;
+            }
+
+            .btnfive{
+                width: 200px;
+                height: 200px;
+                background-image: url('five.jpg');
+                background-size: cover;
+            }
+
+            .btnsix{
+                width: 200px;
+                height: 200px;
+                background-image: url('six.jpg');
+                background-size: cover;
+            }
+
+            .btnseven {
+                width: 200px;
+                height: 200px;
+                background-image: url('seven.jpg');
+                background-size: cover;
+            }
+
+            .btneight {
+                width: 200px;
+                height: 200px;
+                background-image: url('eight.jpg');
+                background-size: cover;
+            }
+
+            .btnnine {
+                width: 200px;
+                height: 200px;
+                background-image: url('nine.jpg');
+                background-size: cover;
+            }
+
+            .btnten {
+                width: 200px;
+                height: 200px;
+                background-image: url('ten.jpg');
+                background-size: cover;
+            }
+
+            .btnreset {
+                width: 100px;
+                height: 50px;
+                font-size:20px
+            }
+
+            .img{                
+                width: 400;
+                height: 200;
+            }
+
+            </style>
+    </head>
+    <body>
+        <title>Kids Game</title>
+        <audio src = "" id ="aud1" type="audio/mp3" autoplay>
+        </audio>
+        <button id = one class = btnone onclick = one()></button> 
+        <img id="imgone" class = img src="blank.png"><br><br>
+        <button id = two class = btntwo onclick = two()></button> 
+        <img id="imgtwo" class = img src="blank.png"><br><br>
+        <button id = three class = btnthree onclick = three()></button> 
+        <img id="imgthree" class = img src="blank.png"><br><br>
+        <button id = four class = btnfour onclick = four()></button> 
+        <img id="imgfour" class = img src="blank.png"><br><br>
+        <button id = five class = btnfive onclick = five()></button> 
+        <img id="imgfive" class = img src="blank.png"><br><br>
+        <button id = six class = btnsix onclick = six()></button> 
+        <img id="imgsix" class = img src="blank.png"><img id="imgsix2" class=img src="blank.png"><br><br>
+        <button id = seven class = btnseven onclick = seven()></button> 
+        <img id="imgseven" class = img src="blank.png"><img id="imgseven2" class=img src="blank.png"><br><br>
+        <button id = eight class = btneight onclick = eight()></button> 
+        <img id="imgeight" class = img src="blank.png"><img id="imgeight2" class=img src="blank.png"><br><br>
+        <button id = nine class = btnnine onclick = nine()></button> 
+        <img id="imgnine" class = img src="blank.png"><img id="imgnine2" class=img src="blank.png"><br><br>
+        <button id = ten class = btnten onclick = ten()></button> 
+        <img id="imgten" class = img src="blank.png"><img id="imgten2" class=img src="blank.png"><br><br>
+        <input type="button" class="btnreset" value="Reset" onclick="reset()"/>
+        <script>
+            function one()
+            {
+                 document.getElementById("one").style.backgroundImage = "url(numone.jpg)";
+                 let audio = document.getElementById("aud1");
+                 audio.src="one.mp3";
+                 let img = document.getElementById("imgone");
+                 img.src = "countone.jpg"
+            }
+
+            function two()
+            {
+                 document.getElementById("two").style.backgroundImage = "url(numtwo.jpg)";
+                 let audio = document.getElementById("aud1");
+                 audio.src="two.mp3";
+                 let img = document.getElementById("imgtwo");
+                 img.src = "counttwo.jpg"
+            }
+
+            function three()
+            {
+                 document.getElementById("three").style.backgroundImage = "url(numthree.jpg)";
+                 let audio = document.getElementById("aud1");
+                 audio.src="three.mp3";
+                 let img = document.getElementById("imgthree");
+                 img.src = "countthree.jpg"
+            }
+
+            function four()
+            {
+                 document.getElementById("four").style.backgroundImage = "url(numfour.jpg)";
+                 let audio = document.getElementById("aud1");
+                 audio.src="four.mp3";
+                 let img = document.getElementById("imgfour");
+                 img.src = "countfour.jpg"
+            }
+
+            function five()
+            {
+                 document.getElementById("five").style.backgroundImage = "url(numfive.jpg)";
+                 let audio = document.getElementById("aud1");
+                 audio.src="five.mp3";
+                 let img = document.getElementById("imgfive");
+                 img.src = "countfive.jpg"
+            }
+
+            function six()
+            {
+                document.getElementById("six").style.backgroundImage = "url(numsix.jpg)";
+                let audio = document.getElementById("aud1");
+                audio.src = "six.mp3";
+                let img = document.getElementById("imgsix");
+                img.src = "countthree.jpg";
+                let img2 = document.getElementById("imgsix2");
+                img2.src = "countthree.jpg";
+            }
+
+            function seven() {
+                document.getElementById("seven").style.backgroundImage = "url(numseven.jpg)";
+                let audio = document.getElementById("aud1");
+                audio.src = "seven.mp3";
+                let img = document.getElementById("imgseven");
+                img.src = "countfour.jpg";
+                let img2 = document.getElementById("imgseven2");
+                img2.src = "countthree.jpg";
+            }
+
+            function eight() {
+                document.getElementById("eight").style.backgroundImage = "url(numeight.jpg)";
+                let audio = document.getElementById("aud1");
+                audio.src = "eight.mp3";
+                let img = document.getElementById("imgeight");
+                img.src = "countfour.jpg";
+                let img2 = document.getElementById("imgeight2");
+                img2.src = "countfour.jpg";
+            }
+
+            function nine() {
+                document.getElementById("nine").style.backgroundImage = "url(numnine.jpg)";
+                let audio = document.getElementById("aud1");
+                audio.src = "nine.mp3";
+                let img = document.getElementById("imgnine");
+                img.src = "countfive.jpg";
+                let img2 = document.getElementById("imgnine2");
+                img2.src = "countfour.jpg";
+            }
+
+            function ten() {
+                document.getElementById("ten").style.backgroundImage = "url(numten.jpg)";
+                let audio = document.getElementById("aud1");
+                audio.src = "ten.mp3";
+                let img = document.getElementById("imgten");
+                img.src = "countfive.jpg";
+                let img2 = document.getElementById("imgten2");
+                img2.src = "countfive.jpg";
+            }
+
+            function reset() {
+                location.reload();
+            }
+        </script>
+    </body>
+</html>
+
+<!-- <audio controls>
+    <source src="" type="audio/mp3">
+  </audio> -->
+
